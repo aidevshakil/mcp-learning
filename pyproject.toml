@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "joke_mcp"
+version = "0.1.0"
+description = "A simple Joke Generator MCP server for learning purposes."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.2.0",
+]
+
+[project.scripts]
+joke-mcp = "joke_mcp.server:main"

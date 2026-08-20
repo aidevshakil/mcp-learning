@@ -1,0 +1,8 @@
+startCommand:
+  type: stdio
+  command: python
+  args:
+    - -m
+    - joke_mcp
+build:
+  command: pip install .
